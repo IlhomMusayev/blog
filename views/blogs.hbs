@@ -1,0 +1,22 @@
+<h1>Blog page</h1>
+
+<div class="row mb-2">
+    {{#if blogs.length}}
+    {{#each blogs}}
+        <div class="col-md-6">
+          <div class="row d-flex align-items-center g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-8 p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0 title">{{title}}</h3>
+              <div class="mb-1 text-muted">{{author}}</div>
+              <p class="card-text mb-auto text">{{text}}</p>
+              <a href="/blogs/{{id}}" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-4 d-none d-lg-block">
+              <img style="width: 100%;" src="{{img}}" alt="{{title}}">
+            </div>
+          </div>
+        </div>
+    {{/each}}
+    {{/if}}
+  </div>    

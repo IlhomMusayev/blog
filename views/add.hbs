@@ -1,0 +1,35 @@
+<h1>Add blog</h1>
+
+<form action="/add" class="needs-validation" method="POST">
+
+    <label for="validationCustom03" class="form-label">Blog Title:</label>
+    <div class="input-group mb-3">
+        <input type="text" name="title" class="form-control" id="validationCustom03" placeholder="Blog title..." required>
+    </div>
+     <div class="invalid-feedback">
+        Please choose a title.
+      </div>
+
+
+    <label for="author" class="form-label">Blog Author:</label>
+    <div class="input-group mb-3">
+        <input type="text" name="author" class="form-control" id="author" placeholder="Blog author..." required>
+    </div>
+
+
+
+    <label for="img" class="form-label">Blog Img Url:</label>
+    <div class="input-group mb-3">
+        <input type="text" name="img" class="form-control" id="img" placeholder="Blog img url ...." required>
+    </div>
+
+
+
+     <label for="text" class="form-label">Blog text:</label>
+    <div class="input-group mb-3">
+        <textarea type="text" name="text" class="form-control" id="text" placeholder="Blog text..." rows="6" required></textarea>
+    </div>
+
+
+    <button type="submit" class="btn btn-dark w-100 fs-5">Save Blog</button>
+</form>
